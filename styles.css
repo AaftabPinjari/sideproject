@@ -1,0 +1,16 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    resize: none;
+}
+
+#blogOutput {
+    white-space: pre-wrap; /* Preserve whitespace and formatting */
+}

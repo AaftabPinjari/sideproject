@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript To Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Transcript to Blog Convertor</h1>
+    </header>
+    <main class="container mt-5">
+        <div class="form-group">
+            <label for="transcriptInput">Paste Transcript Here:</label>
+            <textarea id="transcriptInput" class="form-control" rows="10" placeholder="Paste your transcript here..."></textarea>
+        </div>
+        <button id="submitBtn" class="btn btn-success">Create Blog</button>
+        
+        <div id="outputContainer" class="mt-4" style="display: none;">
+            <h2>Generated Blog Post:</h2>
+            <button id="copyBtn" class="btn btn-info mt-2" style="display: none;">Copy Blog</button>
+            <div id="blogOutput" class="border p-3"></div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 Transcript TO Blog</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
