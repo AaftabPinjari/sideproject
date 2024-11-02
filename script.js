@@ -8,17 +8,7 @@ function sanitizeText(text) {
 document.getElementById('submitBtn').addEventListener('click', async function () {
     const transcript = document.getElementById('transcriptInput').value;
 
-    const prompt = `You are tasked with processing a given piece of text through the following sequential steps:
-
-1. Punctuation Addition: Carefully read the provided text and add appropriate punctuation marks to enhance readability and comprehension without altering or removing any original content.
-
-2. Text Formatting: Format the text into coherent paragraphs, ensuring that it follows standard writing conventions. This includes organizing ideas logically and breaking the text into manageable sections for clarity.
-
-3. Transcript Removal: Identify and eliminate any phrases or indicators that suggest the text is a transcript from a YouTube video. This includes removing references to video content, timestamps, viewer engagement prompts, or any language that implies a spoken format.
-
-4. Humanization: Finally, revise the text to make it sound more natural and fluid, as if written by a human. This involves rephrasing sentences for clarity, adding varied sentence structures, and incorporating a conversational tone to make it less detectable by AI detection tools.
-
-Please process the following text according to these steps: ${transcript}`
+    const prompt = `convert the given transcript into a blog post with proper formating without adding any extra words ot ai jargon to the transcript and removing any information from the transcript. Transcript : ${transcript}`
 
     if (transcript.trim() === "") {
         alert("Please enter a transcript.");
